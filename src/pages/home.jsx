@@ -18,7 +18,7 @@ function Home() {
       ) : user ? (
         <h1>Welcome {user.email}</h1>
       ) : (
-        <h1>Welcome to my App!</h1>
+        <h1>Welcome to my Notes App!</h1>
       )}
       {!loading && !user && <p>Please Sign Up or Login to continue.</p>}
       <div className="buttons-container">
