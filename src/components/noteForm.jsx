@@ -16,14 +16,14 @@ function NoteForm() {
 
     try {
       const collectionRef = collection(database, "notes");
-      const docRef = doc(collectionRef); // auto-generated ID
+      const docRef = doc(collectionRef);
       await setDoc(docRef, {
         text: note,
         name: user.email || user.uid || "Anonymous",
         createdAt: new Date(),
       });
       alert("Note added successfully");
-      setNote(""); // clear form
+      setNote("");
     } catch (error) {
       alert("Error: " + error.message);
     }
