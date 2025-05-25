@@ -1,12 +1,30 @@
-# React + Vite
+# 📝 Firebase Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based notes application powered by Firebase. Users can write and manage team notes and messages in real-time, with a secure and advanced authentication system. The app supports multiple login methods including Google login, email/password sign-up, and includes full account management features.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Advanced Authentication System:**
+  - Google Sign-In
+  - Email & Password Sign-Up and Login
+  - Re-authentication for sensitive operations
+  - Persistent login sessions using Firebase Auth
+  - Real-time authentication state tracking using `react-firebase-hooks`
 
-## Expanding the ESLint configuration
+- 🧠 **Notes Management:**
+  - Add and store notes with live form input
+  - Each note is user-specific and securely stored
+  - Firestore / Realtime Database storage with real-time syncing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📡 **Realtime Sync via WebSockets:**
+  - Firebase Firestore or Realtime Database uses WebSockets under the hood
+  - Real-time updates across all user sessions and devices
+
+## ⚙️ Tech Stack
+
+- React.js (Functional Components + Hooks)
+- Firebase Authentication
+- Firebase Firestore or Realtime Database
+- WebSockets (via Firebase)
+- react-firebase-hooks
+
