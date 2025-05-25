@@ -19,7 +19,7 @@ function NoteForm() {
       const docRef = doc(collectionRef); // auto-generated ID
       await setDoc(docRef, {
         text: note,
-        name: user.displayName || user.uid || "Anonymous",
+        name: user.email || user.uid || "Anonymous",
         createdAt: new Date(),
       });
       alert("Note added successfully");
